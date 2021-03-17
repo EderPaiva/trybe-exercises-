@@ -1,39 +1,66 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <h1>Formulário</h1>
     </header>
     <form action="">
-       
+
         <fieldset>
-            <label for="nome">
-        <input type="text" placeholder=" Digite seu nome" name="nome">
+            <label for="text-name">Nome
+                <input type="text" placeholder=" Digite seu nome" name="nome" id="text-name">
             </label>
+            <label for="text-email">
+                <input type="text" placeholder="email" name="email" required id="text-email">
+            </label>
+            <label for="cpf">
+                <input type="text" placeholder="cpf" name="cpf" required id="cpf">
+            </label>
+            <label for="adress"> 
             
-        <input type="text" placeholder="email" name="email">
-        <input type="tex"  placeholder="cpf" name="cpf">
-        <input type="text" placeholder="Endereço" name="endereço">
-        <input type="text" placeholder="cidade" name="cidade">
-        <input type="radio" name="crazy" value="dsico">
-        <input type="radio" name="crazy" value="psico">
+            <input type="text" placeholder="Endereço" name="endereço" required id="adress">
+            </label> 
 
-    </fieldset>
-    <select id="dropDown">
-        
+            <label for="city">
+            <input type="text" placeholder="cidade" name="cidade" required id="city">
+            </label>
+
+            
+            <input type="radio" name="home" value="casa" required>casa
+            
+            <input type="radio" name="home" value="apartamento" required>apartamento
+
+        </fieldset>
+        <select id="dropDown">
 
 
-    </select>
+        </select>
 
-    <button type="submit"> Submit </button>
+        <fieldset>
+            <textarea name="aboutme" rows="5" cols="30"> Sobre min!
+
+            </textarea>
+        </fieldset>
+
+
+
+        <button type="submit"> Submit </button>
+        <button type="reset"> Limpar-Tudo</button>
 
     </form>
-    
+
+    <!-- esqueci de importar o CSS -->
+    <script src="script.js"></script>
+
 </body>
+
 </html>
