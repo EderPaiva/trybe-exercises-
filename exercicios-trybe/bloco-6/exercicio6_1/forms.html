@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+
+<body >
+    <header>
+        <h1>Formulário</h1>
+    </header>
+    <form method="GET">
+
+   
+
+        <fieldset>
+            <div class="input-group mb-3">
+                <label for="name" class="form-label">
+                    Nome<input type="text" placeholder=" Digite seu nome" name="nome" id="name" maxlength="40"
+                        class="form-control">
+                </label>
+            </div>
+            <div class="mb-3">
+                <label for="text-email" class="mb-3">
+                    Email<input type="text" placeholder="email" name="email" required id="text-email" maxlength="50" class="form-control">
+                </label>
+            </div>
+            <label for="CPF" class="form-label" >
+                CPF<input type="number" placeholder="cpf" name="cpf" required id="CPF" maxlength="11" class="form-control">
+            </label>
+            <label for="adress" class="form-label">
+                Endereço <input type="text" placeholder="Endereço" name="endereço" required id="adress" maxlength="200" class="form-control">
+            </label>
+
+            <label for="city" class="form-label">
+                Cidade<input type="text" placeholder="cidade" name="cidade" required id="city" maxlength="28" class="form-control">
+            </label>
+
+            
+            <div class="input-group ">          
+               <div class="input-group-text"> Casa
+             <input type="radio" name="home" value="casa" class="form-control" aria-label="casa" required>
+             </div>
+             <div class="input-group-text"> Apartamento
+            <input type="radio" name="home" value="apartamento" required aria-label="apartamento" class="form-control">
+            </div>
+       
+
+      <div class="form-select"> Qual seu estado?
+        <select class="form-select" aria-label="Estados" id="dropDown">
+
+
+        </select >
+      </div>
+
+        <fieldset>
+            
+           <div class="form-floating"> 
+                <textarea  class="form-control" name="aboutme" maxlength="1000" id="sobremin">
+
+            </textarea>
+           </div>
+
+            
+            <label for="cargoDescription" class="form-label">
+                <input type="text" name="cargo-description" required id="cargoDescription" class="form-control">
+            </label>
+
+            
+            <div class="form-floating"> 
+            <textarea class="form-control" name="aboutme" maxlength="500" class="form-control">
+
+            </textarea>
+         </div>
+            
+
+        
+
+
+
+        <button type="button" class="btn btn-success"> Submit </button>
+        <button type="reset" class="btn btn-warning"> Limpar-Tudo</button>
+
+
+      
+
+    </form>
+
+    <!-- esqueci de importar o CSS -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
