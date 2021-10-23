@@ -22,7 +22,7 @@ io.on('connection', (socket) => {
         console.log('Alguém se desconectou')
     })
     socket.on('mensagem',(msg)=> {
-      console.log(`Alguém enviou essa mensagem!! Veio do front PQ backEscutou! ${msg}`)
+      io.emit('newConnection', {message: msg})
     })
     socket.emit('message',' Seja bem vindo ao chat!! Este back emitindo pro front!')
 
