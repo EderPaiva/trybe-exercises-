@@ -14,6 +14,8 @@ const io = require('socket.io')(http, {
 // Iniciando conexão!!
 app.use(cors());
 
+// Quando o socket é on ele está aguardando mensagem!
+// quando é emit ele está emitindo mensagem mas para quem? neste caso aqui do back para o front!
 io.on('connection', (socket) => {
     // enviando pro front que usuario se conectou
     console.log('Alguém se conection');
@@ -29,6 +31,7 @@ io.on('connection', (socket) => {
     socket.broadcast.emit('newConnection', {message:'Eba urro front alguém se conectou'})
 })
 // Rota get que faz a importação do html
+// lembrando que por aqui voce pode receber um login por exemplo através de req.body!! e valida-lo!
 app.get('/', (req, res) => {
  return  res.sendFile(__dirname + '/index.html');
 });
